@@ -1,0 +1,11 @@
+google-genai
+groq
+streamlit
+pandas
+numpy
+scikit-learn
+sentence-transformers
+faker
+plotly
+python-dotenv
+reportlab

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0c66bb03-5917-40c4-b51d-2081debd7063" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="EmbeddingIndexingInfo">
+    <option name="cachedIndexableFilesCount" value="29" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.0000000000211235" />
+      <entry key="MS500" value="1.021361562514616" />
+      <entry key="S2" value="2.3910591489056885" />
+      <entry key="S5" value="4.325768016065174" />
+      <entry key="S10" value="5.462856215309325" />
+      <entry key="S30" value="6.435163552878837" />
+      <entry key="S60" value="6.711394871981338" />
+      <entry key="M2" value="6.924403126682746" />
+      <entry key="M5" value="7.936075341086399" />
+      <entry key="M10" value="9.77992390534982" />
+      <entry key="M15" value="11.845726630205283" />
+      <entry key="M30" value="17.971610746500858" />
+      <entry key="H1" value="25.44796920865443" />
+      <entry key="H2" value="31.506498653298685" />
+      <entry key="H4" value="35.393255849403545" />
+      <entry key="D1" value="39.17664275211881" />
+      <entry key="W1" value="39.88093759533695" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="0.0" />
+      <entry key="S10" value="0.0" />
+      <entry key="S30" value="0.0" />
+      <entry key="S60" value="0.0" />
+      <entry key="M2" value="0.0" />
+      <entry key="M5" value="0.0" />
+      <entry key="M10" value="0.0" />
+      <entry key="M15" value="0.0" />
+      <entry key="M30" value="0.0" />
+      <entry key="H1" value="0.0" />
+      <entry key="H2" value="0.0" />
+      <entry key="H4" value="0.0" />
+      <entry key="D1" value="0.0" />
+      <entry key="W1" value="0.0" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="0.9395227492254122" />
+      <entry key="MS500" value="1.007466289205845" />
+      <entry key="S2" value="2.3691797722775663" />
+      <entry key="S5" value="4.307916106343216" />
+      <entry key="S10" value="5.451401217059795" />
+      <entry key="S30" value="6.430643330895412" />
+      <entry key="S60" value="6.709036356476157" />
+      <entry key="M2" value="6.9231770272704045" />
+      <entry key="M5" value="7.935381275755858" />
+      <entry key="M10" value="9.779352036658219" />
+      <entry key="M15" value="11.845219634671128" />
+      <entry key="M30" value="17.97122457880826" />
+      <entry key="H1" value="25.44771031299934" />
+      <entry key="H2" value="31.506344701863515" />
+      <entry key="H4" value="35.393171296364265" />
+      <entry key="D1" value="39.17662745574715" />
+      <entry key="W1" value="39.88093537844353" />
+    </decayedShown>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3Fg37YMvPpXS4w8qUpHKEFHu2Ez" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python.attack_runner.executor&quot;: &quot;Run&quot;,
+    &quot;Python.bank_simulator.executor&quot;: &quot;Run&quot;,
+    &quot;Python.classifier.executor&quot;: &quot;Run&quot;,
+    &quot;Python.create_additional_datasets.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.create_datasets.executor&quot;: &quot;Run&quot;,
+    &quot;Python.external_api_handler.executor&quot;: &quot;Run&quot;,
+    &quot;Python.scorer.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test_setup.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.sync&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-245168a56dbd-c2ffad84badb-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-261.25134.203" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0c66bb03-5917-40c4-b51d-2081debd7063" name="Changes" comment="" />
+      <created>1782482718422</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1782482718422</updated>
+      <workItem from="1782482719396" duration="1520000" />
+      <workItem from="1782506736957" duration="4148000" />
+      <workItem from="1782547030803" duration="5852000" />
+      <workItem from="1782583722614" duration="2977000" />
+      <workItem from="1782745845183" duration="1690000" />
+      <workItem from="1782769966117" duration="606000" />
+      <workItem from="1782805197864" duration="601000" />
+      <workItem from="1782830742813" duration="3281000" />
+      <workItem from="1782854389038" duration="2745000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Capstone$test_setup.coverage" NAME="test_setup Coverage Results" MODIFIED="1782510726064" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/Capstone$bank_simulator.coverage" NAME="bank_simulator Coverage Results" MODIFIED="1782510907193" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/Capstone$classifier.coverage" NAME="classifier Coverage Results" MODIFIED="1782547953880" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/Capstone$attack_runner.coverage" NAME="attack_runner Coverage Results" MODIFIED="1782832323775" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/Capstone$scorer.coverage" NAME="scorer Coverage Results" MODIFIED="1782549642269" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/Capstone$create_additional_datasets.coverage" NAME="create_additional_datasets Coverage Results" MODIFIED="1782831093258" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/Capstone$create_datasets.coverage" NAME="create_datasets Coverage Results" MODIFIED="1782513749860" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/Capstone$external_api_handler.coverage" NAME="external_api_handler Coverage Results" MODIFIED="1782584203914" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+  </component>
+</project>
