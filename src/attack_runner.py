@@ -12,15 +12,19 @@ load_dotenv()
 
 # ─── LOAD CLASSIFIER ─────────────────────────────────────────────────────────
 print("Loading classifier...")
-import os as _os
-_MODEL_PATH = _os.path.join(_os.path.dirname(_os.path.abspath(__file__)), "..", "models", "prompt_classifier.pkl")
+if not os.path.exists(_MODEL_PATH):
+    print("Classifier not found — training now. This takes 1-2 minutes...")
+    os.makedirs(os.path.dirname(_MODEL_PATH), exist_ok=True)
+    import subprocess
+    classifier_script = os.path.join(os.path.dirname(os.path.abspath(__file__)), "classifier.py")
+    subprocess.run(["python", classifier_script], check=True)
+    print("✓ Classifier trained successfully")
+
 with open(_MODEL_PATH, "rb") as f:
     saved = pickle.load(f)
 clf = saved['model']
 embedder = saved['embedder']
 print("✓ Classifier loaded")
-
-
 # ─── EVALUATOR ───────────────────────────────────────────────────────────────
 def evaluate_response(attack_prompt, ai_response):
     client = Groq(api_key=os.getenv("GROQ_API_KEY"))
