@@ -10,6 +10,11 @@ from external_api_handler import call_single_prompt
 
 load_dotenv()
 
+# ─── PATHS ───────────────────────────────────────────────────────────────────
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+_MODEL_PATH = os.path.join(BASE_DIR, "..", "models", "classifier.pkl")
+
+
 # ─── LOAD CLASSIFIER ─────────────────────────────────────────────────────────
 print("Loading classifier...")
 if not os.path.exists(_MODEL_PATH):
