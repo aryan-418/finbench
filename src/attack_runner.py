@@ -16,12 +16,17 @@ _MODEL_PATH = os.path.join(BASE_DIR, "..", "models", "prompt_classifier.pkl")
 
 # ─── LOAD CLASSIFIER ─────────────────────────────────────────────────────────
 print("Loading classifier...")
-if not os.path.exists(_MODEL_PATH):
-    print("Classifier not found — training now. This takes 1-2 minutes...")
-    os.makedirs(os.path.dirname(_MODEL_PATH), exist_ok=True)
-    from classifier import train_classifier
-    train_classifier()
-    print("✓ Classifier trained successfully")
+# TEMPORARY DEBUG
+if os.path.exists(_MODEL_PATH):
+    os.remove(_MODEL_PATH)
+
+print("Training classifier...")
+os.makedirs(os.path.dirname(_MODEL_PATH), exist_ok=True)
+
+from classifier import train_classifier
+train_classifier()
+
+print("✓ Classifier trained successfully")
 
 with open(_MODEL_PATH, "rb") as f:
     saved = pickle.load(f)
