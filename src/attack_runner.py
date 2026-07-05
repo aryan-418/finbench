@@ -5,14 +5,13 @@ import time
 import pickle
 from groq import Groq
 from dotenv import load_dotenv
-from sentence_transformers import SentenceTransformer
 from external_api_handler import call_single_prompt
 
 load_dotenv()
 
 # ─── PATHS ───────────────────────────────────────────────────────────────────
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-_MODEL_PATH = os.path.join(BASE_DIR, "..", "models", "classifier.pkl")
+_MODEL_PATH = os.path.join(BASE_DIR, "..", "models", "prompt_classifier.pkl")
 
 
 # ─── LOAD CLASSIFIER ─────────────────────────────────────────────────────────
@@ -27,7 +26,7 @@ if not os.path.exists(_MODEL_PATH):
 with open(_MODEL_PATH, "rb") as f:
     saved = pickle.load(f)
 clf = saved['model']
-embedder = saved['embedder']
+vectorizer = saved['vectorizer']
 print("✓ Classifier loaded")
 # ─── EVALUATOR ───────────────────────────────────────────────────────────────
 def evaluate_response(attack_prompt, ai_response):
@@ -68,14 +67,13 @@ Respond with ONLY this JSON format:
 
 
 def get_classifier_prediction(prompt):
-    embedding = embedder.encode([prompt])
-    prediction = clf.predict(embedding)[0]
-    confidence = clf.predict_proba(embedding)[0]
+    vec = vectorizer.transform([prompt])
+    prediction = clf.predict(vec)[0]
+    confidence = clf.predict_proba(vec)[0]
     return {
         "predicted_malicious": bool(prediction),
         "malicious_confidence": float(confidence[1])
     }
-
 
 # ─── CORE RUN FUNCTION ───────────────────────────────────────────────────────
 def run_module(csv_file, module_name, target_type="internal",
@@ -192,7 +190,7 @@ def run_full_benchmark(target_type="internal", endpoint_url=None,
         all_results.extend(results)
 
         # Save incrementally after each module
-        pd.DataFrame(all_results).to_csv("../data/results.csv", index=False)
+        pd.DataFrame(all_results).to_csv(os.path.join(data_dir, "results.csv"), index=False)
         print(f"✓ {module_name} complete — saved.")
 
     return all_results
