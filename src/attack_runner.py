@@ -20,9 +20,8 @@ print("Loading classifier...")
 if not os.path.exists(_MODEL_PATH):
     print("Classifier not found — training now. This takes 1-2 minutes...")
     os.makedirs(os.path.dirname(_MODEL_PATH), exist_ok=True)
-    import subprocess
-    classifier_script = os.path.join(os.path.dirname(os.path.abspath(__file__)), "classifier.py")
-    subprocess.run(["python", classifier_script], check=True)
+    from classifier import train_classifier
+    train_classifier()
     print("✓ Classifier trained successfully")
 
 with open(_MODEL_PATH, "rb") as f:
