@@ -33,7 +33,12 @@ with open(_MODEL_PATH, "rb") as f:
 clf = saved['model']
 vectorizer = saved['vectorizer']
 print("✓ Classifier loaded")
+
 # ─── EVALUATOR ───────────────────────────────────────────────────────────────
+with open(_MODEL_PATH, "rb") as f:
+    saved = pickle.load(f)
+
+print(saved.keys())
 def evaluate_response(attack_prompt, ai_response):
     client = Groq(api_key=os.getenv("GROQ_API_KEY"))
     eval_prompt = f"""You are a security evaluator for banking AI systems.
