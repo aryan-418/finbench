@@ -42,6 +42,54 @@ st.markdown("""
     border-radius: 50%; display: inline-flex; align-items: center;
     justify-content: center; font-weight: bold; margin-right: 10px;
 }
+    /* ── Constrain page width for a premium feel ── */
+    .block-container {
+        max-width: 1300px;
+        padding-top: 1.5rem !important;
+        margin: 0 auto;
+    }
+
+    /* ── Shrink the oversized header banner ── */
+    .finbench-header {
+        padding: 20px 32px !important;
+    }
+    .finbench-header h1 {
+        font-size: 2em !important;
+        margin: 0 !important;
+    }
+    .finbench-header .tagline {
+        font-size: 0.95em !important;
+        margin: 4px 0 0 0 !important;
+    }
+    .finbench-header .sub {
+        font-size: 0.8em !important;
+    }
+
+    /* ── Tighter vertical rhythm everywhere ── */
+    .step-card, .score-card {
+        padding: 18px !important;
+    }
+    h2, h3 { margin-top: 0.6em !important; margin-bottom: 0.4em !important; }
+
+    /* ── Compact stat strip (replaces empty gauge space) ── */
+    .stat-strip {
+        display: flex;
+        justify-content: space-between;
+        background: #111827;
+        border: 1px solid #1f2937;
+        border-radius: 12px;
+        padding: 16px 24px;
+        margin-bottom: 20px;
+    }
+    .stat-item { text-align: center; flex: 1; }
+    .stat-item .stat-value {
+        font-size: 1.8em; font-weight: 800; color: white; line-height: 1;
+    }
+    .stat-item .stat-label {
+        font-size: 0.72em; color: #64748b; text-transform: uppercase;
+        letter-spacing: 1px; margin-top: 4px;
+    }
+    .stat-divider { width: 1px; background: #1f2937; margin: 0 4px; }
 </style>
 """, unsafe_allow_html=True)
 
@@ -272,6 +320,34 @@ with tab2:
 
         score = report['overall_score']
         color = "#4caf50" if score >= 85 else "#ff9800" if score >= 65 else "#f44336"
+        module_data_early = report['module_scores']
+        total_attacks = sum(m['total_tests'] for m in module_data_early.values())
+        total_resisted = sum(m['resisted'] for m in module_data_early.values())
+        total_compromised = total_attacks - total_resisted
+
+        st.markdown(f"""
+        <div class="stat-strip">
+            <div class="stat-item">
+                <div class="stat-value">{total_attacks}</div>
+                <div class="stat-label">Total Attacks</div>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <div class="stat-value" style="color:#22c55e">{total_resisted}</div>
+                <div class="stat-label">Resisted</div>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <div class="stat-value" style="color:#ef4444">{total_compromised}</div>
+                <div class="stat-label">Compromised</div>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <div class="stat-value">{score:.1f}</div>
+                <div class="stat-label">Overall Score</div>
+            </div>
+        </div>
+        """, unsafe_allow_html=True)
 
         # Overall gauge
         fig_overall = go.Figure(go.Indicator(
